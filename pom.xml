@@ -6,7 +6,7 @@
 
     <groupId>az.nuran</groupId>
     <artifactId>nurmail</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 
     <name>Nurmail</name>
     <description>Easy to use HTML email template engine</description>
@@ -30,7 +30,7 @@
     <scm>
         <connection>scm:git:git://github.com/nuranaskarov/nurmail.git</connection>
         <developerConnection>scm:git:ssh://github.com:nuranaskarov/nurmail.git</developerConnection>
-        <url>http://github.com/nuranaskarov/nurmail/tree/main</url>
+        <url>http://github.com/nuranaskarov/nurmail/tree/master</url>
     </scm>
 
     <properties>

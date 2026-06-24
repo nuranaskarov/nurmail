@@ -17,6 +17,7 @@
 package az.nuran.nurmail;
 
 import az.nuran.nurmail.exception.NurmailResourceLoadingFailedException;
+import az.nuran.nurmail.exception.NurmailResourceNotFoundException;
 
 import java.io.InputStream;
 
@@ -43,8 +44,11 @@ public class Nurmail {
      * @return {@link NurmailBuilder} template builder
      */
     public static NurmailBuilder fromResource(String resourceName) {
-        try (InputStream stream = Thread.currentThread().getContextClassLoader().getResourceAsStream(resourceName)) {
-            assert stream != null;
+        InputStream stream = Thread.currentThread().getContextClassLoader().getResourceAsStream(resourceName);
+        if (stream == null) {
+            throw new NurmailResourceNotFoundException(resourceName);
+        }
+        try (stream) {
             return fromString(new String(stream.readAllBytes()));
         } catch (Exception e) {
             throw new NurmailResourceLoadingFailedException(resourceName, e.getMessage());

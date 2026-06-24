@@ -41,7 +41,7 @@ template.body(); // <...>
 Gradle:
 
 ```groovy
-implementation 'az.nuran:nurmail:0.0.1'
+implementation 'az.nuran:nurmail:0.0.2'
 ```
 
 Maven:
@@ -50,7 +50,7 @@ Maven:
 <dependency>
     <groupId>az.nuran</groupId>
     <artifactId>nurmail</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
