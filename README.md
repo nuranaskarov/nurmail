@@ -1,6 +1,6 @@
 # Nurmail
 
-Nurmail is a Java library that makes it easy to define and use HTML email templates.
+[Nurmail](https://central.sonatype.com/artifact/az.nuran/nurmail) is a Java library that makes it easy to define and use HTML email templates.
 It provides a simple API and mustache-like templating syntax. Email templates are defined in HTML,
 where title part is automatically parsed as subject and the rest as body.
 
